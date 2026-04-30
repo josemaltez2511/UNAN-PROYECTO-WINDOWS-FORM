@@ -1,4 +1,5 @@
-﻿using SanarRuralProyectoUnan.forms.citas;
+﻿using Microsoft.VisualBasic.Logging;
+using SanarRuralProyectoUnan.forms.citas;
 using SanarRuralProyectoUnan.forms.diagnostico;
 using SanarRuralProyectoUnan.forms.tratamientos;
 using SanarRuralProyectoUnan.Modulos; // Traemos el molde de Paciente y el Servicio de Citas
@@ -20,14 +21,18 @@ namespace SanarRuralProyectoUnan
         // Instanciamos el servicio de citas para poder guardar y leer datos.
         private CitaService _citaService = new CitaService();
 
+        private Form _ventanaLogin; // Variable para guardar el Login
+
         // El Constructor: Es lo primero que corre cuando se crea esta ventana.
-        // Recibe al 'paciente' que viene viajando desde el Login.
-        public menuForm(Paciente paciente)
+        // Recibe al 'paciente' que viene viajando desde el Login y guarda el inicio de sesion
+        public menuForm(Paciente paciente, Form login)
         {
             InitializeComponent(); // Función obligatoria que dibuja los botones.
 
             // Guardamos los datos del paciente en nuestra variable de arriba.
             _pacienteSesion = paciente;
+
+            _ventanaLogin = login; // Guardamos la referencia al Login para poder volver a mostrarlo después.
 
             // Personalizamos el saludo de bienvenida.
             if (_pacienteSesion != null)
@@ -89,7 +94,11 @@ namespace SanarRuralProyectoUnan
 
             if (respuesta == DialogResult.Yes)
             {
+                // Sincronizamos el tamaño antes de volver (Responsividad)
+                _ventanaLogin.WindowState = this.WindowState;
+
                 // 'this.Close()' cierra esta ventana y vuelve al Login (que está oculto).
+                _ventanaLogin.Show();
                 this.Close();
             }
         }

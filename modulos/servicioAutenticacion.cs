@@ -34,25 +34,25 @@ namespace SanarRuralProyectoUnan.Modulos
             _pacientesGuardados.Add(new Paciente
             {
                 Id = "1",
-                Nombre = "Juan Perez",
-                Email = "juan@mail.com",
-                Password = "123"
+                Nombre = "Abraham Maltez",
+                Email = "abraham@gmail.com",
+                Password = "12345"
             });
 
             _pacientesGuardados.Add(new Paciente
             {
                 Id = "2",
-                Nombre = "Maria Lopez",
-                Email = "maria@mail.com",
-                Password = "456"
+                Nombre = "Amarelis Berrios",
+                Email = "amarelis@gmail.com",
+                Password = "12345"
             });
 
             _pacientesGuardados.Add(new Paciente
             {
                 Id = "3",
-                Nombre = "Carlos Soto",
-                Email = "carlos@mail.com",
-                Password = "789"
+                Nombre = "Esther Rodriguez",
+                Email = "esther@mail.com",
+                Password = "12345"
             });
         }
 
