@@ -49,5 +49,15 @@ namespace SanarRuralProyectoUnan.forms.citas
             _menuPadre.Show();
             this.Close();
         }
+
+        private void dgvCitas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

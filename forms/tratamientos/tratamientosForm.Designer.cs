@@ -17,166 +17,186 @@
 
         private void InitializeComponent()
         {
-            lblTitulo = new Label();
-            txtDescripcion = new TextBox();
-            dtpInicio = new DateTimePicker();
-            dtpFin = new DateTimePicker();
-            btnGuardar = new Button();
-            dgvTratamientos = new DataGridView();
-            btnVolver = new Button();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            tablaGlobal = new TableLayoutPanel();
-            panelIzquierdoInputs = new Panel();
-            ((System.ComponentModel.ISupportInitialize)dgvTratamientos).BeginInit();
-            tablaGlobal.SuspendLayout();
-            panelIzquierdoInputs.SuspendLayout();
-            SuspendLayout();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.dtpInicio = new System.Windows.Forms.DateTimePicker();
+            this.dtpFin = new System.Windows.Forms.DateTimePicker();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.dgvTratamientos = new System.Windows.Forms.DataGridView();
+            this.btnVolver = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tablaGlobal = new System.Windows.Forms.TableLayoutPanel();
+            this.panelIzquierdoInputs = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTratamientos)).BeginInit();
+            this.tablaGlobal.SuspendLayout();
+            this.panelIzquierdoInputs.SuspendLayout();
+            this.SuspendLayout();
             // 
             // lblTitulo
             // 
-            lblTitulo.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
-            lblTitulo.ForeColor = Color.White;
-            lblTitulo.Location = new Point(10, 10);
-            lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(300, 40);
-            lblTitulo.TabIndex = 0;
-            lblTitulo.Text = "Gestión de Tratamientos";
-            lblTitulo.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // txtDescripcion
-            // 
-            txtDescripcion.Location = new Point(10, 90);
-            txtDescripcion.Multiline = true;
-            txtDescripcion.Name = "txtDescripcion";
-            txtDescripcion.Size = new Size(300, 60);
-            txtDescripcion.TabIndex = 2;
-            // 
-            // dtpInicio
-            // 
-            dtpInicio.Location = new Point(10, 180);
-            dtpInicio.Name = "dtpInicio";
-            dtpInicio.Size = new Size(200, 23);
-            dtpInicio.TabIndex = 4;
-            // 
-            // dtpFin
-            // 
-            dtpFin.Location = new Point(10, 240);
-            dtpFin.Name = "dtpFin";
-            dtpFin.Size = new Size(200, 23);
-            dtpFin.TabIndex = 6;
-            // 
-            // btnGuardar
-            // 
-            btnGuardar.Location = new Point(10, 280);
-            btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(200, 40);
-            btnGuardar.TabIndex = 7;
-            btnGuardar.Text = "💾 Registrar Tratamiento";
-            btnGuardar.Click += btnGuardar_Click;
-            // 
-            // dgvTratamientos
-            // 
-            dgvTratamientos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvTratamientos.BackgroundColor = Color.White;
-            dgvTratamientos.BorderStyle = BorderStyle.None;
-            dgvTratamientos.Dock = DockStyle.Fill;
-            dgvTratamientos.Location = new Point(386, 18);
-            dgvTratamientos.Name = "dgvTratamientos";
-            dgvTratamientos.Size = new Size(546, 464);
-            dgvTratamientos.TabIndex = 1;
-            dgvTratamientos.CellContentClick += dgvTratamientos_CellContentClick;
-            // 
-            // btnVolver
-            // 
-            btnVolver.Location = new Point(10, 350);
-            btnVolver.Name = "btnVolver";
-            btnVolver.Size = new Size(100, 30);
-            btnVolver.TabIndex = 8;
-            btnVolver.Text = "← Volver";
-            btnVolver.Click += btnVolver_Click;
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblTitulo.ForeColor = System.Drawing.Color.White;
+            this.lblTitulo.Location = new System.Drawing.Point(10, 10);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(300, 40);
+            this.lblTitulo.TabIndex = 0;
+            this.lblTitulo.Text = "Gestión de Tratamientos";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(10, 70);
-            label2.Name = "label2";
-            label2.Size = new Size(158, 15);
-            label2.TabIndex = 1;
-            label2.Text = "Descripción del Tratamiento:";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(10, 65);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(201, 19);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Descripción del Tratamiento:";
+            // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDescripcion.Location = new System.Drawing.Point(10, 90);
+            this.txtDescripcion.Multiline = true;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(300, 60);
+            this.txtDescripcion.TabIndex = 2;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(10, 160);
-            label3.Name = "label3";
-            label3.Size = new Size(89, 15);
-            label3.TabIndex = 3;
-            label3.Text = "Fecha de Inicio:";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(10, 165);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(113, 19);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Fecha de Inicio:";
+            // 
+            // dtpInicio
+            // 
+            this.dtpInicio.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpInicio.Location = new System.Drawing.Point(10, 190);
+            this.dtpInicio.Name = "dtpInicio";
+            this.dtpInicio.Size = new System.Drawing.Size(300, 27);
+            this.dtpInicio.TabIndex = 4;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(10, 220);
-            label4.Name = "label4";
-            label4.Size = new Size(122, 15);
-            label4.TabIndex = 5;
-            label4.Text = "Fecha de Finalización:";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(10, 230);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(155, 19);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Fecha de Finalización:";
+            // 
+            // dtpFin
+            // 
+            this.dtpFin.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtpFin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFin.Location = new System.Drawing.Point(10, 255);
+            this.dtpFin.Name = "dtpFin";
+            this.dtpFin.Size = new System.Drawing.Size(300, 27);
+            this.dtpFin.TabIndex = 6;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BackColor = System.Drawing.Color.White;
+            this.btnGuardar.FlatAppearance.BorderSize = 0;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnGuardar.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btnGuardar.Location = new System.Drawing.Point(10, 310);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(145, 40);
+            this.btnGuardar.TabIndex = 7;
+            this.btnGuardar.Text = "💾 Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnVolver
+            // 
+            this.btnVolver.BackColor = System.Drawing.Color.LightCoral;
+            this.btnVolver.FlatAppearance.BorderSize = 0;
+            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVolver.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnVolver.ForeColor = System.Drawing.Color.White;
+            this.btnVolver.Location = new System.Drawing.Point(165, 310);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(145, 40);
+            this.btnVolver.TabIndex = 8;
+            this.btnVolver.Text = "← Volver";
+            this.btnVolver.UseVisualStyleBackColor = false;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
+            // dgvTratamientos
+            // 
+            this.dgvTratamientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvTratamientos.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvTratamientos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvTratamientos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvTratamientos.Location = new System.Drawing.Point(386, 18);
+            this.dgvTratamientos.Name = "dgvTratamientos";
+            this.dgvTratamientos.Size = new System.Drawing.Size(546, 464);
+            this.dgvTratamientos.TabIndex = 1;
+            this.dgvTratamientos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTratamientos_CellContentClick);
             // 
             // tablaGlobal
             // 
-            tablaGlobal.BackColor = Color.SteelBlue;
-            tablaGlobal.ColumnCount = 2;
-            tablaGlobal.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40F));
-            tablaGlobal.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60F));
-            tablaGlobal.Controls.Add(panelIzquierdoInputs, 0, 0);
-            tablaGlobal.Controls.Add(dgvTratamientos, 1, 0);
-            tablaGlobal.Dock = DockStyle.Fill;
-            tablaGlobal.Location = new Point(0, 0);
-            tablaGlobal.Name = "tablaGlobal";
-            tablaGlobal.Padding = new Padding(15);
-            tablaGlobal.RowCount = 1;
-            tablaGlobal.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tablaGlobal.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tablaGlobal.Size = new Size(950, 500);
-            tablaGlobal.TabIndex = 0;
+            this.tablaGlobal.BackColor = System.Drawing.Color.SteelBlue;
+            this.tablaGlobal.ColumnCount = 2;
+            this.tablaGlobal.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tablaGlobal.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tablaGlobal.Controls.Add(this.panelIzquierdoInputs, 0, 0);
+            this.tablaGlobal.Controls.Add(this.dgvTratamientos, 1, 0);
+            this.tablaGlobal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tablaGlobal.Location = new System.Drawing.Point(0, 0);
+            this.tablaGlobal.Name = "tablaGlobal";
+            this.tablaGlobal.Padding = new System.Windows.Forms.Padding(15);
+            this.tablaGlobal.RowCount = 1;
+            this.tablaGlobal.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tablaGlobal.Size = new System.Drawing.Size(950, 500);
+            this.tablaGlobal.TabIndex = 0;
             // 
             // panelIzquierdoInputs
             // 
-            panelIzquierdoInputs.Anchor = AnchorStyles.None;
-            panelIzquierdoInputs.Controls.Add(lblTitulo);
-            panelIzquierdoInputs.Controls.Add(label2);
-            panelIzquierdoInputs.Controls.Add(txtDescripcion);
-            panelIzquierdoInputs.Controls.Add(label3);
-            panelIzquierdoInputs.Controls.Add(dtpInicio);
-            panelIzquierdoInputs.Controls.Add(label4);
-            panelIzquierdoInputs.Controls.Add(dtpFin);
-            panelIzquierdoInputs.Controls.Add(btnGuardar);
-            panelIzquierdoInputs.Controls.Add(btnVolver);
-            panelIzquierdoInputs.Location = new Point(39, 50);
-            panelIzquierdoInputs.Name = "panelIzquierdoInputs";
-            panelIzquierdoInputs.Size = new Size(320, 400);
-            panelIzquierdoInputs.TabIndex = 0;
+            this.panelIzquierdoInputs.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelIzquierdoInputs.Controls.Add(this.lblTitulo);
+            this.panelIzquierdoInputs.Controls.Add(this.label2);
+            this.panelIzquierdoInputs.Controls.Add(this.txtDescripcion);
+            this.panelIzquierdoInputs.Controls.Add(this.label3);
+            this.panelIzquierdoInputs.Controls.Add(this.dtpInicio);
+            this.panelIzquierdoInputs.Controls.Add(this.label4);
+            this.panelIzquierdoInputs.Controls.Add(this.dtpFin);
+            this.panelIzquierdoInputs.Controls.Add(this.btnGuardar);
+            this.panelIzquierdoInputs.Controls.Add(this.btnVolver);
+            this.panelIzquierdoInputs.Location = new System.Drawing.Point(39, 50);
+            this.panelIzquierdoInputs.Name = "panelIzquierdoInputs";
+            this.panelIzquierdoInputs.Size = new System.Drawing.Size(320, 400);
+            this.panelIzquierdoInputs.TabIndex = 0;
             // 
             // tratamientosForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.SteelBlue;
-            ClientSize = new Size(950, 500);
-            Controls.Add(tablaGlobal);
-            Name = "tratamientosForm";
-            Text = "Sanar Rural - Gestión de Tratamientos";
-            Load += tratamientosForm_Load;
-            ((System.ComponentModel.ISupportInitialize)dgvTratamientos).EndInit();
-            tablaGlobal.ResumeLayout(false);
-            panelIzquierdoInputs.ResumeLayout(false);
-            panelIzquierdoInputs.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.ClientSize = new System.Drawing.Size(950, 500);
+            this.Controls.Add(this.tablaGlobal);
+            this.Name = "tratamientosForm";
+            this.Text = "Sanar Rural - Gestión de Tratamientos";
+            this.Load += new System.EventHandler(this.tratamientosForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTratamientos)).EndInit();
+            this.tablaGlobal.ResumeLayout(false);
+            this.panelIzquierdoInputs.ResumeLayout(false);
+            this.panelIzquierdoInputs.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -191,7 +211,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private TableLayoutPanel tablaGlobal;
-        private Panel panelIzquierdoInputs;
+        private System.Windows.Forms.TableLayoutPanel tablaGlobal;
+        private System.Windows.Forms.Panel panelIzquierdoInputs;
     }
 }

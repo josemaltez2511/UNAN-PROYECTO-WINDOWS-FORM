@@ -6,7 +6,10 @@
 
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null)) components.Dispose();
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
             base.Dispose(disposing);
         }
 
@@ -37,16 +40,18 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(40, 120);
+            label1.Location = new Point(40, 135);
             label1.Name = "label1";
-            label1.Size = new Size(156, 15);
+            label1.Size = new Size(199, 19);
             label1.TabIndex = 1;
             label1.Text = "Descripción del tratamiento:";
             // 
             // txtDescripcion
             // 
-            txtDescripcion.Location = new Point(40, 140);
+            txtDescripcion.Font = new Font("Segoe UI", 11F);
+            txtDescripcion.Location = new Point(40, 160);
             txtDescripcion.Multiline = true;
             txtDescripcion.Name = "txtDescripcion";
             txtDescripcion.Size = new Size(320, 80);
@@ -55,74 +60,89 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(40, 240);
+            label2.Location = new Point(40, 255);
             label2.Name = "label2";
-            label2.Size = new Size(89, 15);
+            label2.Size = new Size(112, 19);
             label2.TabIndex = 3;
             label2.Text = "Fecha de Inicio:";
             // 
             // dtpInicio
             // 
+            dtpInicio.Font = new Font("Segoe UI", 11F);
             dtpInicio.Format = DateTimePickerFormat.Short;
-            dtpInicio.Location = new Point(40, 260);
+            dtpInicio.Location = new Point(40, 280);
             dtpInicio.Name = "dtpInicio";
-            dtpInicio.Size = new Size(320, 23);
+            dtpInicio.Size = new Size(320, 27);
             dtpInicio.TabIndex = 4;
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(40, 300);
+            label3.Location = new Point(40, 320);
             label3.Name = "label3";
-            label3.Size = new Size(127, 15);
+            label3.Size = new Size(159, 19);
             label3.TabIndex = 5;
             label3.Text = "Fecha Estimada de Fin:";
             // 
             // dtpFin
             // 
+            dtpFin.Font = new Font("Segoe UI", 11F);
             dtpFin.Format = DateTimePickerFormat.Short;
-            dtpFin.Location = new Point(40, 320);
+            dtpFin.Location = new Point(40, 345);
             dtpFin.Name = "dtpFin";
-            dtpFin.Size = new Size(320, 23);
+            dtpFin.Size = new Size(320, 27);
             dtpFin.TabIndex = 6;
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(40, 370);
+            btnGuardar.BackColor = Color.White;
+            btnGuardar.FlatAppearance.BorderSize = 0;
+            btnGuardar.FlatStyle = FlatStyle.Flat;
+            btnGuardar.Font = new Font("Segoe UI", 10.5F, FontStyle.Bold);
+            btnGuardar.ForeColor = Color.SteelBlue;
+            btnGuardar.Location = new Point(40, 400);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(150, 40);
             btnGuardar.TabIndex = 7;
             btnGuardar.Text = "💾 Guardar";
-            btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.UseVisualStyleBackColor = false;
             btnGuardar.Click += btnGuardar_Click;
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(210, 370);
+            btnCancelar.BackColor = Color.LightCoral;
+            btnCancelar.FlatAppearance.BorderSize = 0;
+            btnCancelar.FlatStyle = FlatStyle.Flat;
+            btnCancelar.Font = new Font("Segoe UI", 10.5F, FontStyle.Bold);
+            btnCancelar.ForeColor = Color.White;
+            btnCancelar.Location = new Point(210, 400);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(150, 40);
             btnCancelar.TabIndex = 8;
             btnCancelar.Text = "❌ Cancelar";
-            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.UseVisualStyleBackColor = false;
             btnCancelar.Click += btnCancelar_Click;
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(160, 10);
+            pictureBox1.Location = new Point(270, 10);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(80, 60);
+            pictureBox1.Size = new Size(10, 10);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
+            pictureBox1.Visible = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
             // lblTitulo
             // 
-            lblTitulo.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lblTitulo.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
             lblTitulo.ForeColor = Color.White;
-            lblTitulo.Location = new Point(20, 80);
+            lblTitulo.Location = new Point(20, 90);
             lblTitulo.Name = "lblTitulo";
             lblTitulo.Size = new Size(360, 30);
             lblTitulo.TabIndex = 0;
@@ -157,9 +177,9 @@
             panelFormulario.Controls.Add(btnGuardar);
             panelFormulario.Controls.Add(btnCancelar);
             panelFormulario.Controls.Add(pictureBox1);
-            panelFormulario.Location = new Point(200, 25);
+            panelFormulario.Location = new Point(200, 15);
             panelFormulario.Name = "panelFormulario";
-            panelFormulario.Size = new Size(400, 450);
+            panelFormulario.Size = new Size(400, 470);
             panelFormulario.TabIndex = 0;
             // 
             // pictureBox2
@@ -167,7 +187,7 @@
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(140, 10);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(119, 73);
+            pictureBox2.Size = new Size(120, 80);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 10;
             pictureBox2.TabStop = false;
@@ -188,6 +208,7 @@
             panelFormulario.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
+
         }
 
         #endregion
@@ -202,8 +223,8 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblTitulo;
-        private TableLayoutPanel layoutCentrador;
-        private Panel panelFormulario;
-        private PictureBox pictureBox2;
+        private System.Windows.Forms.TableLayoutPanel layoutCentrador;
+        private System.Windows.Forms.Panel panelFormulario;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

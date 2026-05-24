@@ -7,7 +7,7 @@ using System;
 using System.Windows.Forms;
 
 namespace SanarRuralProyectoUnan
-{
+{   
     public partial class menuForm : Form
     {
         // =============================================================

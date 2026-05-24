@@ -6,7 +6,10 @@
 
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null)) components.Dispose();
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
             base.Dispose(disposing);
         }
 
@@ -32,26 +35,32 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             label1.ForeColor = Color.White;
             label1.Location = new Point(20, 20);
             label1.Name = "label1";
-            label1.Size = new Size(248, 15);
+            label1.Size = new Size(315, 19);
             label1.TabIndex = 1;
             label1.Text = "Describe tus síntomas (separados por comas):";
             // 
             // txtEntradaSintomas
             // 
+            txtEntradaSintomas.Font = new Font("Segoe UI", 11F);
             txtEntradaSintomas.Location = new Point(20, 45);
             txtEntradaSintomas.Name = "txtEntradaSintomas";
-            txtEntradaSintomas.Size = new Size(310, 23);
+            txtEntradaSintomas.Size = new Size(410, 27);
             txtEntradaSintomas.TabIndex = 2;
             // 
             // btnAnalizar
             // 
-            btnAnalizar.BackColor = Color.Transparent;
-            btnAnalizar.Location = new Point(20, 80);
+            btnAnalizar.BackColor = Color.White;
+            btnAnalizar.FlatAppearance.BorderSize = 0;
+            btnAnalizar.FlatStyle = FlatStyle.Flat;
+            btnAnalizar.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnAnalizar.ForeColor = Color.SteelBlue;
+            btnAnalizar.Location = new Point(20, 85);
             btnAnalizar.Name = "btnAnalizar";
-            btnAnalizar.Size = new Size(150, 40);
+            btnAnalizar.Size = new Size(180, 40);
             btnAnalizar.TabIndex = 3;
             btnAnalizar.Text = "🔍 Analizar Síntomas";
             btnAnalizar.UseVisualStyleBackColor = false;
@@ -59,20 +68,25 @@
             // 
             // lblResultado
             // 
-            lblResultado.BackColor = Color.White;
-            lblResultado.BorderStyle = BorderStyle.FixedSingle;
-            lblResultado.Location = new Point(20, 130);
+            lblResultado.BackColor = Color.WhiteSmoke;
+            lblResultado.Font = new Font("Segoe UI", 10.5F);
+            lblResultado.ForeColor = Color.FromArgb(64, 64, 64);
+            lblResultado.Location = new Point(20, 140);
             lblResultado.Name = "lblResultado";
-            lblResultado.Padding = new Padding(10);
-            lblResultado.Size = new Size(410, 180);
+            lblResultado.Padding = new Padding(15);
+            lblResultado.Size = new Size(410, 170);
             lblResultado.TabIndex = 4;
             // 
             // btnRegresar
             // 
-            btnRegresar.BackColor = Color.Transparent;
-            btnRegresar.Location = new Point(280, 330);
+            btnRegresar.BackColor = Color.LightCoral;
+            btnRegresar.FlatAppearance.BorderSize = 0;
+            btnRegresar.FlatStyle = FlatStyle.Flat;
+            btnRegresar.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnRegresar.ForeColor = Color.White;
+            btnRegresar.Location = new Point(270, 330);
             btnRegresar.Name = "btnRegresar";
-            btnRegresar.Size = new Size(150, 40);
+            btnRegresar.Size = new Size(160, 40);
             btnRegresar.TabIndex = 5;
             btnRegresar.Text = "Volver al Menú";
             btnRegresar.UseVisualStyleBackColor = false;
@@ -80,10 +94,14 @@
             // 
             // btnIrACita
             // 
-            btnIrACita.BackColor = Color.Transparent;
+            btnIrACita.BackColor = Color.White;
+            btnIrACita.FlatAppearance.BorderSize = 0;
+            btnIrACita.FlatStyle = FlatStyle.Flat;
+            btnIrACita.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnIrACita.ForeColor = Color.MediumSeaGreen;
             btnIrACita.Location = new Point(20, 330);
             btnIrACita.Name = "btnIrACita";
-            btnIrACita.Size = new Size(150, 40);
+            btnIrACita.Size = new Size(160, 40);
             btnIrACita.TabIndex = 6;
             btnIrACita.Text = "📅 Agendar Cita";
             btnIrACita.UseVisualStyleBackColor = false;
@@ -93,9 +111,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(340, 10);
+            pictureBox1.Location = new Point(370, 77);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(80, 50);
+            pictureBox1.Size = new Size(60, 60);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -122,8 +140,8 @@
             panelContenido.Controls.Add(txtEntradaSintomas);
             panelContenido.Controls.Add(btnAnalizar);
             panelContenido.Controls.Add(lblResultado);
-            panelContenido.Controls.Add(btnRegresar);
             panelContenido.Controls.Add(btnIrACita);
+            panelContenido.Controls.Add(btnRegresar);
             panelContenido.Location = new Point(75, 50);
             panelContenido.Name = "panelContenido";
             panelContenido.Size = new Size(450, 400);
@@ -133,7 +151,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
+            BackColor = Color.SteelBlue;
             ClientSize = new Size(600, 500);
             Controls.Add(tablaPrincipal);
             Name = "diagnosticoForm";
@@ -143,6 +161,7 @@
             panelContenido.ResumeLayout(false);
             panelContenido.PerformLayout();
             ResumeLayout(false);
+
         }
 
         #endregion
@@ -154,7 +173,7 @@
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Button btnIrACita;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private TableLayoutPanel tablaPrincipal;
-        private Panel panelContenido;
+        private System.Windows.Forms.TableLayoutPanel tablaPrincipal;
+        private System.Windows.Forms.Panel panelContenido;
     }
 }

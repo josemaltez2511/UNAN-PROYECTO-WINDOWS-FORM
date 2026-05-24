@@ -18,152 +18,172 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(signInForm));
-            pictureBox1 = new PictureBox();
-            botonCrearUsuario = new Button();
-            botonCancelar = new Button();
-            txtNombreRegistro = new TextBox();
-            txtPasswordRegistro = new TextBox();
-            txtEmailRegistro = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            tablaPrincipal = new TableLayoutPanel();
-            panelCentralRegistro = new Panel();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            tablaPrincipal.SuspendLayout();
-            panelCentralRegistro.SuspendLayout();
-            SuspendLayout();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.botonCrearUsuario = new System.Windows.Forms.Button();
+            this.botonCancelar = new System.Windows.Forms.Button();
+            this.txtNombreRegistro = new System.Windows.Forms.TextBox();
+            this.txtPasswordRegistro = new System.Windows.Forms.TextBox();
+            this.txtEmailRegistro = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tablaPrincipal = new System.Windows.Forms.TableLayoutPanel();
+            this.panelCentralRegistro = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tablaPrincipal.SuspendLayout();
+            this.panelCentralRegistro.SuspendLayout();
+            this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(403, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(394, 444);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
-            // 
-            // botonCrearUsuario
-            // 
-            botonCrearUsuario.Location = new Point(50, 230);
-            botonCrearUsuario.Name = "botonCrearUsuario";
-            botonCrearUsuario.Size = new Size(110, 35);
-            botonCrearUsuario.TabIndex = 6;
-            botonCrearUsuario.Text = "Crear Usuario";
-            botonCrearUsuario.UseVisualStyleBackColor = true;
-            botonCrearUsuario.Click += botonCrearUsuario_Click;
-            // 
-            // botonCancelar
-            // 
-            botonCancelar.Location = new Point(190, 230);
-            botonCancelar.Name = "botonCancelar";
-            botonCancelar.Size = new Size(110, 35);
-            botonCancelar.TabIndex = 7;
-            botonCancelar.Text = "Cancelar";
-            botonCancelar.UseVisualStyleBackColor = true;
-            botonCancelar.Click += botonCancelar_Click;
-            // 
-            // txtNombreRegistro
-            // 
-            txtNombreRegistro.Location = new Point(50, 60);
-            txtNombreRegistro.Name = "txtNombreRegistro";
-            txtNombreRegistro.Size = new Size(250, 23);
-            txtNombreRegistro.TabIndex = 1;
-            txtNombreRegistro.TextChanged += txtNombreRegistro_TextChanged;
-            // 
-            // txtPasswordRegistro
-            // 
-            txtPasswordRegistro.Location = new Point(50, 180);
-            txtPasswordRegistro.Name = "txtPasswordRegistro";
-            txtPasswordRegistro.Size = new Size(250, 23);
-            txtPasswordRegistro.TabIndex = 5;
-            txtPasswordRegistro.UseSystemPasswordChar = true;
-            // 
-            // txtEmailRegistro
-            // 
-            txtEmailRegistro.Location = new Point(50, 120);
-            txtEmailRegistro.Name = "txtEmailRegistro";
-            txtEmailRegistro.Size = new Size(250, 23);
-            txtEmailRegistro.TabIndex = 3;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(403, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(394, 444);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(50, 40);
-            label1.Name = "label1";
-            label1.Size = new Size(105, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Ingrese su nombre";
-            label1.Click += label1_Click;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(50, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(135, 19);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Ingrese su nombre";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // txtNombreRegistro
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(50, 160);
-            label2.Name = "label2";
-            label2.Size = new Size(121, 15);
-            label2.TabIndex = 4;
-            label2.Text = "Ingrese su contraseña";
+            this.txtNombreRegistro.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtNombreRegistro.Location = new System.Drawing.Point(50, 65);
+            this.txtNombreRegistro.Name = "txtNombreRegistro";
+            this.txtNombreRegistro.Size = new System.Drawing.Size(250, 27);
+            this.txtNombreRegistro.TabIndex = 1;
+            this.txtNombreRegistro.TextChanged += new System.EventHandler(this.txtNombreRegistro_TextChanged);
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(50, 100);
-            label3.Name = "label3";
-            label3.Size = new Size(97, 15);
-            label3.TabIndex = 2;
-            label3.Text = "Ingrese su correo";
-            label3.Click += label3_Click;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(50, 115);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(126, 19);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Ingrese su correo";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // txtEmailRegistro
+            // 
+            this.txtEmailRegistro.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtEmailRegistro.Location = new System.Drawing.Point(50, 140);
+            this.txtEmailRegistro.Name = "txtEmailRegistro";
+            this.txtEmailRegistro.Size = new System.Drawing.Size(250, 27);
+            this.txtEmailRegistro.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(50, 190);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(155, 19);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Ingrese su contraseña";
+            // 
+            // txtPasswordRegistro
+            // 
+            this.txtPasswordRegistro.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPasswordRegistro.Location = new System.Drawing.Point(50, 215);
+            this.txtPasswordRegistro.Name = "txtPasswordRegistro";
+            this.txtPasswordRegistro.Size = new System.Drawing.Size(250, 27);
+            this.txtPasswordRegistro.TabIndex = 5;
+            this.txtPasswordRegistro.UseSystemPasswordChar = true;
+            // 
+            // botonCrearUsuario
+            // 
+            this.botonCrearUsuario.BackColor = System.Drawing.Color.White;
+            this.botonCrearUsuario.FlatAppearance.BorderSize = 0;
+            this.botonCrearUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonCrearUsuario.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.botonCrearUsuario.ForeColor = System.Drawing.Color.SteelBlue;
+            this.botonCrearUsuario.Location = new System.Drawing.Point(50, 275);
+            this.botonCrearUsuario.Name = "botonCrearUsuario";
+            this.botonCrearUsuario.Size = new System.Drawing.Size(120, 40);
+            this.botonCrearUsuario.TabIndex = 6;
+            this.botonCrearUsuario.Text = "Crear Usuario";
+            this.botonCrearUsuario.UseVisualStyleBackColor = false;
+            this.botonCrearUsuario.Click += new System.EventHandler(this.botonCrearUsuario_Click);
+            // 
+            // botonCancelar
+            // 
+            this.botonCancelar.BackColor = System.Drawing.Color.LightCoral;
+            this.botonCancelar.FlatAppearance.BorderSize = 0;
+            this.botonCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonCancelar.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.botonCancelar.ForeColor = System.Drawing.Color.White;
+            this.botonCancelar.Location = new System.Drawing.Point(180, 275);
+            this.botonCancelar.Name = "botonCancelar";
+            this.botonCancelar.Size = new System.Drawing.Size(120, 40);
+            this.botonCancelar.TabIndex = 7;
+            this.botonCancelar.Text = "Cancelar";
+            this.botonCancelar.UseVisualStyleBackColor = false;
+            this.botonCancelar.Click += new System.EventHandler(this.botonCancelar_Click);
             // 
             // tablaPrincipal
             // 
-            tablaPrincipal.BackColor = Color.SteelBlue;
-            tablaPrincipal.ColumnCount = 2;
-            tablaPrincipal.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tablaPrincipal.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tablaPrincipal.Controls.Add(panelCentralRegistro, 0, 0);
-            tablaPrincipal.Controls.Add(pictureBox1, 1, 0);
-            tablaPrincipal.Dock = DockStyle.Fill;
-            tablaPrincipal.Location = new Point(0, 0);
-            tablaPrincipal.Name = "tablaPrincipal";
-            tablaPrincipal.RowCount = 1;
-            tablaPrincipal.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tablaPrincipal.Size = new Size(800, 450);
-            tablaPrincipal.TabIndex = 0;
-            tablaPrincipal.Paint += tablaPrincipal_Paint;
+            this.tablaPrincipal.BackColor = System.Drawing.Color.SteelBlue;
+            this.tablaPrincipal.ColumnCount = 2;
+            this.tablaPrincipal.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tablaPrincipal.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tablaPrincipal.Controls.Add(this.panelCentralRegistro, 0, 0);
+            this.tablaPrincipal.Controls.Add(this.pictureBox1, 1, 0);
+            this.tablaPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tablaPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.tablaPrincipal.Name = "tablaPrincipal";
+            this.tablaPrincipal.RowCount = 1;
+            this.tablaPrincipal.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tablaPrincipal.Size = new System.Drawing.Size(800, 450);
+            this.tablaPrincipal.TabIndex = 0;
+            this.tablaPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.tablaPrincipal_Paint);
             // 
             // panelCentralRegistro
             // 
-            panelCentralRegistro.Anchor = AnchorStyles.None;
-            panelCentralRegistro.Controls.Add(label1);
-            panelCentralRegistro.Controls.Add(txtNombreRegistro);
-            panelCentralRegistro.Controls.Add(label3);
-            panelCentralRegistro.Controls.Add(txtEmailRegistro);
-            panelCentralRegistro.Controls.Add(label2);
-            panelCentralRegistro.Controls.Add(txtPasswordRegistro);
-            panelCentralRegistro.Controls.Add(botonCrearUsuario);
-            panelCentralRegistro.Controls.Add(botonCancelar);
-            panelCentralRegistro.Location = new Point(25, 25);
-            panelCentralRegistro.Name = "panelCentralRegistro";
-            panelCentralRegistro.Size = new Size(350, 400);
-            panelCentralRegistro.TabIndex = 0;
+            this.panelCentralRegistro.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelCentralRegistro.Controls.Add(this.label1);
+            this.panelCentralRegistro.Controls.Add(this.txtNombreRegistro);
+            this.panelCentralRegistro.Controls.Add(this.label3);
+            this.panelCentralRegistro.Controls.Add(this.txtEmailRegistro);
+            this.panelCentralRegistro.Controls.Add(this.label2);
+            this.panelCentralRegistro.Controls.Add(this.txtPasswordRegistro);
+            this.panelCentralRegistro.Controls.Add(this.botonCrearUsuario);
+            this.panelCentralRegistro.Controls.Add(this.botonCancelar);
+            this.panelCentralRegistro.Location = new System.Drawing.Point(25, 25);
+            this.panelCentralRegistro.Name = "panelCentralRegistro";
+            this.panelCentralRegistro.Size = new System.Drawing.Size(350, 400);
+            this.panelCentralRegistro.TabIndex = 0;
             // 
             // signInForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(tablaPrincipal);
-            Name = "signInForm";
-            Text = "Sanar Rural - Registro";
-            Load += signInForm_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            tablaPrincipal.ResumeLayout(false);
-            panelCentralRegistro.ResumeLayout(false);
-            panelCentralRegistro.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.tablaPrincipal);
+            this.Name = "signInForm";
+            this.Text = "Sanar Rural - Registro";
+            this.Load += new System.EventHandler(this.signInForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tablaPrincipal.ResumeLayout(false);
+            this.panelCentralRegistro.ResumeLayout(false);
+            this.panelCentralRegistro.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -177,7 +197,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private TableLayoutPanel tablaPrincipal;
-        private Panel panelCentralRegistro;
+        private System.Windows.Forms.TableLayoutPanel tablaPrincipal;
+        private System.Windows.Forms.Panel panelCentralRegistro;
     }
 }

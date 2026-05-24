@@ -35,43 +35,53 @@
             // 
             // textBoxUsuario
             // 
-            textBoxUsuario.Location = new Point(50, 60);
+            textBoxUsuario.Font = new Font("Segoe UI", 11F);
+            textBoxUsuario.Location = new Point(30, 65);
             textBoxUsuario.Name = "textBoxUsuario";
-            textBoxUsuario.Size = new Size(200, 23);
+            textBoxUsuario.Size = new Size(240, 27);
             textBoxUsuario.TabIndex = 0;
             // 
             // textBoxContraseña
             // 
-            textBoxContraseña.Location = new Point(50, 120);
+            textBoxContraseña.Font = new Font("Segoe UI", 11F);
+            textBoxContraseña.Location = new Point(30, 135);
             textBoxContraseña.Name = "textBoxContraseña";
-            textBoxContraseña.Size = new Size(200, 23);
+            textBoxContraseña.Size = new Size(240, 27);
             textBoxContraseña.TabIndex = 1;
             textBoxContraseña.UseSystemPasswordChar = true;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(50, 40);
+            label1.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(30, 40);
             label1.Name = "label1";
-            label1.Size = new Size(94, 15);
+            label1.Size = new Size(119, 19);
             label1.TabIndex = 0;
             label1.Text = "Usuario / Correo";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(50, 100);
+            label2.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(30, 110);
             label2.Name = "label2";
-            label2.Size = new Size(67, 15);
+            label2.Size = new Size(84, 19);
             label2.TabIndex = 1;
             label2.Text = "Contraseña";
             // 
             // botonIniciarSesion
             // 
-            botonIniciarSesion.BackColor = SystemColors.ButtonHighlight;
-            botonIniciarSesion.Location = new Point(75, 170);
+            botonIniciarSesion.BackColor = Color.White;
+            botonIniciarSesion.FlatAppearance.BorderSize = 0;
+            botonIniciarSesion.FlatStyle = FlatStyle.Flat;
+            botonIniciarSesion.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            botonIniciarSesion.ForeColor = Color.SteelBlue;
+            botonIniciarSesion.Location = new Point(30, 195);
             botonIniciarSesion.Name = "botonIniciarSesion";
-            botonIniciarSesion.Size = new Size(150, 35);
+            botonIniciarSesion.Size = new Size(240, 40);
             botonIniciarSesion.TabIndex = 4;
             botonIniciarSesion.Text = "Iniciar Sesión";
             botonIniciarSesion.UseVisualStyleBackColor = false;
@@ -79,10 +89,13 @@
             // 
             // linkLabelCrearCuenta
             // 
+            linkLabelCrearCuenta.ActiveLinkColor = Color.LightGray;
             linkLabelCrearCuenta.AutoSize = true;
-            linkLabelCrearCuenta.Location = new Point(160, 230);
+            linkLabelCrearCuenta.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            linkLabelCrearCuenta.LinkColor = Color.White;
+            linkLabelCrearCuenta.Location = new Point(165, 260);
             linkLabelCrearCuenta.Name = "linkLabelCrearCuenta";
-            linkLabelCrearCuenta.Size = new Size(76, 15);
+            linkLabelCrearCuenta.Size = new Size(87, 17);
             linkLabelCrearCuenta.TabIndex = 6;
             linkLabelCrearCuenta.TabStop = true;
             linkLabelCrearCuenta.Text = "Crear Cuenta";
@@ -91,11 +104,13 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(50, 230);
+            label3.Font = new Font("Segoe UI", 9.5F);
+            label3.ForeColor = Color.Gainsboro;
+            label3.Location = new Point(35, 260);
             label3.Name = "label3";
-            label3.Size = new Size(108, 15);
+            label3.Size = new Size(130, 17);
             label3.TabIndex = 5;
-            label3.Text = "No está registrado?";
+            label3.Text = "¿No está registrado?";
             // 
             // pictureBox1
             // 
@@ -120,7 +135,7 @@
             tablaPrincipal.Location = new Point(0, 0);
             tablaPrincipal.Name = "tablaPrincipal";
             tablaPrincipal.RowCount = 1;
-            tablaPrincipal.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tablaPrincipal.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tablaPrincipal.Size = new Size(800, 450);
             tablaPrincipal.TabIndex = 0;
             // 
